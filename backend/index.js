@@ -1,8 +1,8 @@
 import express, { response } from "express";
 import {PORT, mongoDB} from "./config.js";
 import mongoose from 'mongoose';
-import {Product} from "./models/product.js";
 import ProductsRoute from "./routes/ProductsRoute.js";
+import cors from 'cors';
 
 const app = express ();
 
